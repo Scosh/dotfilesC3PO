@@ -1,0 +1,36 @@
+# APPS
+# ----
+
+nitrogen --restore &
+#volumeicon &
+volti &
+compton &
+tint2 &
+tint2 -c /home/scosh/.config/tint2/clock/yellow_autohide_clock.tint2rc &
+docky &
+lxpolkit &
+dropbox & 
+
+# KEYBOARD
+# --------
+
+# set caps-lock as the compose key to type umlauts and such
+setxkbmap -option compose:caps
+
+# change the $ key on my US Layout to a Euro-Moneydollars key
+xmodmap -e "keycode  13 = 4 EuroSign 4 EuroSign"
+
+# SYSTEM / SCREEN
+# ---------------
+
+# turn off system error beep
+xset -b 
+
+# turn off screen going dark after 10 mins
+xset -dpms s off
+
+# MISC.
+# -----
+
+# run a custom script that supplies the animated loop for the desktop wallpaper using gifsicle
+bash /home/scosh/Pictures/Wallpapers/GIF/gifbg.sh /home/scosh/Pictures/Wallpapers/GIF/tumblr_nzk1z1suPT1r2geqjo1_540.gif
